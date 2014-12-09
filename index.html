@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html data-ng-app="mobilessonApp">
     <head>
         <meta charset="utf-8">
         <title>Mobilesson Statistics</title>
@@ -27,8 +27,8 @@
 
         <!-- Mobilesson -->
         <link href="css/mobilesson.css" rel="stylesheet">
-        
-        
+
+
 
     </head>
     <body class="overflow-hidden">
@@ -128,30 +128,15 @@
                     </li>
                 </ul>
             </div><!-- /top-nav-->
-            <?php
-                require_once("components/sidebar/sidebar.php");
-            ?>
+            <!-- Header -->
+            <ng-include src="components/sidebar/sidebar.html"></ng-include>
+
             <div id="main-container">
-                <?php
-                    $page=isset($_GET["page"])?$_GET["page"]:"";
-                    switch ($page) {
-                        case "main":
-                            require_once("components/main/main.php");
-                            break;
-                        case "content":
-                            require_once("components/content/content.php");
-                            break;
-                        case "officials":
-                            break;
-                        default:
-                            require_once("404.php");
-                            break;
-                    }
-                ?>
+                <div class="main-view" id="main-view" data-ui-view="main"></div>
 
             </div><!-- /main-container -->
                             <!-- Footer
-                                                                                                                                                                                                                        ================================================== -->
+                                                                                                                                                                                                                                                            ================================================== -->
             <footer>
                 <div class="row">
                     <div class="col-sm-6">
@@ -204,8 +189,13 @@
         </div>
 
                     <!-- Le javascript
-                                                                                                                                                                ================================================== -->
+                                                                                                                                                                                            ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
+        
+        <!-- Angular -->
+        <script src="js/angular.min.js"></script>
+        <script src="js/angular-ui-router.min.js"></script>
+
         <!-- Jquery -->
         <script src="js/jquery-1.10.2.min.js"></script>
         <!-- Bootstrap -->
@@ -216,8 +206,8 @@
         <script src="js/jquery.flot.time.js"></script>
 
         <!-- Morris -->
-        <script src="js/rapheal.min.js"></script>
-        <script src="js/morris.min.js"></script>
+        <!--<script src="js/rapheal.min.js"></script>
+        <script src="js/morris.min.js"></script>-->
 
         <!-- Colorbox -->
         <script src="js/jquery.colorbox.min.js"></script>
@@ -240,13 +230,12 @@
         <script src="js/jquery.cookie.min.js"></script>
 
         <!-- Endless -->
-        <script src="js/endless/endless_dashboard.js"></script>
+       <!-- <script src="js/endless/endless_dashboard.js"></script>-->
         <script src="js/endless/endless.js"></script>
 
         <!-- Mobilesson -->
+        <script src="app.js"></script>
         <script src="components/sidebar/sidebar.js"></script>
-        <script src="js/mobilesson/server.js"></script>
         <script src="components/content/content.js"></script>
-        <script src="js/mobilesson/init.js"></script>
     </body>
 </html>
