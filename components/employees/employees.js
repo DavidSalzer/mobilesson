@@ -1,4 +1,4 @@
-mobilessonApp.controller('dashboard', ['$rootScope', '$scope', '$state', '$http', function ($rootScope, $scope, $state, $http) {
+mobilessonApp.controller('employees', ['$rootScope', '$scope', '$state', '$http', function ($rootScope, $scope, $state, $http) {
 
 
     $http.get(domain + 'statistics/MobiStatistics.php?action=getStatisticsByUnit&unit=all')

@@ -1,4 +1,4 @@
-mobilessonApp.controller('course', ['$rootScope', '$scope', '$state', '$stateParams', '$http', function ($rootScope, $scope, $state, $stateParams, $http) {
+mobilessonApp.controller('department', ['$rootScope', '$scope', '$state', '$stateParams', '$http', function ($rootScope, $scope, $state, $stateParams, $http) {
 
 
     $http.get(domain + 'statistics/MobiStatistics.php?action=getStatisticsByUnit&unit=course&id=' + $stateParams.courseId)
