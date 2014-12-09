@@ -25,6 +25,11 @@
         <link href="css/endless.min.css" rel="stylesheet">
         <link href="css/endless-skin.css" rel="stylesheet">
 
+        
+        <script src="js/mobilesson/server.js"></script>
+        <script src="components/content/content.js"></script>
+        <script src="js/mobilesson/init.js"></script>
+
     </head>
     <body class="overflow-hidden">
         <!-- Overlay Div -->

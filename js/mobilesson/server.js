@@ -7,9 +7,9 @@ function ServerController() {
     //variable decleration
     var self = this;
     
-    this.domain = "http://ec2-184-73-131-143.compute-1.amazonaws.com";
+    this.domain = "http://ec2-184-73-131-143.compute-1.amazonaws.com/";
 
-    this.sendAjax = function (to_url, func) {
+    this.sendAjax = function (to_url, func, err) {
 
         $.ajax({
             type: 'GET',
@@ -21,11 +21,12 @@ function ServerController() {
             },
             error: function (e) {
                 console.log(e.message);
+                err(e);
             }
         });
     }
 
-    this.sendAjaxPost = function (to_url, req, func) {
+    this.sendAjaxPost = function (to_url, req, func, err) {
 
         $.ajax({
             type: 'POST',
@@ -38,6 +39,7 @@ function ServerController() {
             },
             error: function (e) {
                 console.log(e.message);
+                err(e);
             }
         });
     }
