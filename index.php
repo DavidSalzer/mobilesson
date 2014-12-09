@@ -28,9 +28,7 @@
         <!-- Mobilesson -->
         <link href="css/mobilesson.css" rel="stylesheet">
         
-        <script src="js/mobilesson/server.js"></script>
-        <script src="components/content/content.js"></script>
-        <script src="js/mobilesson/init.js"></script>
+        
 
     </head>
     <body class="overflow-hidden">
@@ -247,5 +245,8 @@
 
         <!-- Mobilesson -->
         <script src="components/sidebar/sidebar.js"></script>
+        <script src="js/mobilesson/server.js"></script>
+        <script src="components/content/content.js"></script>
+        <script src="js/mobilesson/init.js"></script>
     </body>
 </html>
