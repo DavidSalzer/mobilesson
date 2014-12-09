@@ -16,15 +16,15 @@ var mobilessonApp = angular.module('mobilessonApp', ['ui.router'])
 		        }
 		    }
 		})
-        .state('courses', {
-            url: "/courses",
-            views: {
-                "main": {
-                    templateUrl: "./components/courses/courses.html",
-                    controller: "courses"
-                }
-            }
-        })
+        //.state('courses', {
+        //    url: "/courses",
+        //    views: {
+        //        "main": {
+        //            templateUrl: "./components/courses/courses.html",
+        //            controller: "courses"
+        //        }
+        //    }
+        //})
         //.state('course', {
         //    url: "/course/:courseId",
         //    views: {

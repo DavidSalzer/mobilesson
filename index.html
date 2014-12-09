@@ -128,11 +128,12 @@
                     </li>
                 </ul>
             </div><!-- /top-nav-->
-            <!-- Header -->
-            <ng-include src="components/sidebar/sidebar.html"></ng-include>
+
+            <!-- Sidebar -->
+            <ng-include src="'components/sidebar/sidebar.html'"></ng-include>
 
             <div id="main-container">
-                <div class="main-view" id="main-view" data-ui-view="main"></div>
+                <div id="main-view" class="main-view" data-ui-view="main"></div>
 
             </div><!-- /main-container -->
                             <!-- Footer
@@ -235,7 +236,7 @@
 
         <!-- Mobilesson -->
         <script src="app.js"></script>
-        <script src="components/sidebar/sidebar.js"></script>
-        <script src="components/content/content.js"></script>
+      <!--  <script src="components/sidebar/sidebar.js"></script>-->
+        <script src="components/dashboard/dashboard.js"></script>
     </body>
 </html>
