@@ -7,7 +7,7 @@ function ServerController() {
     //variable decleration
     var self = this;
     
-    this.domain = "https://";
+    this.domain = "http://ec2-184-73-131-143.compute-1.amazonaws.com";
 
     this.sendAjax = function (to_url, func) {
 
@@ -42,14 +42,4 @@ function ServerController() {
         });
     }
 
-    this.getItems = function (func) {
-        var to_url = "/appServer.php?type=getItem";
-        this.sendAjax(to_url, func);
-    }
-
-    this.initPage = function () {
-        self.getItems(getItemsSuccess);
-    }
-
-    
 }
