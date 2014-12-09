@@ -156,7 +156,7 @@
                     <div class="main-menu">
                         <ul>
                             <li class="active">
-                                <a href="index.html">
+                                <a href="?page=main">
                                     <span class="menu-icon">
                                         <i class="fa fa-desktop fa-lg"></i>
                                     </span>
@@ -166,13 +166,24 @@
                                     <span class="menu-hover"></span>
                                 </a>
                             </li>
+                             <li class="">
+                                <a href="?page=content">
+                                    <span class="menu-icon">
+                                        <i class="fa fa-desktop fa-lg"></i>
+                                    </span>
+                                    <span class="text">
+								Content
+                                    </span>
+                                    <span class="menu-hover"></span>
+                                </a>
+                            </li>
                             <li class="openable open">
-                                <a href="#">
+                                 <a href="?page=content">
                                     <span class="menu-icon">
                                         <i class="fa fa-file-text fa-lg"></i>
                                     </span>
                                     <span class="text">
-								Page
+								Content
                                     </span>
                                     <span class="menu-hover"></span>
                                 </a>
@@ -334,8 +345,8 @@
                         case "main":
                             require_once("components/main/main.php");
                             break;
-                        case "inbox":
-                            require_once("inbox.php");
+                        case "content":
+                            require_once("components/content/content.php");
                             break;
                         case "officials":
                             break;
