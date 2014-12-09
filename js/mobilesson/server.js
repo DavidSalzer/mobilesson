@@ -9,6 +9,7 @@ function ServerController() {
     
     this.domain = "http://ec2-184-73-131-143.compute-1.amazonaws.com/";
 
+    //ajax for http get method
     this.sendAjax = function (to_url, func, err) {
 
         $.ajax({
@@ -26,6 +27,7 @@ function ServerController() {
         });
     }
 
+    //ajax for http post method
     this.sendAjaxPost = function (to_url, req, func, err) {
 
         $.ajax({
