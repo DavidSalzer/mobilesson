@@ -21,6 +21,9 @@
         <!-- Morris -->
         <link href="css/morris.css" rel="stylesheet" />
 
+        <!-- Full Calendar -->
+        <link href="css/fullcalendar.css" rel="stylesheet" />
+
         <!-- Endless -->
         <link href="css/endless.min.css" rel="stylesheet">
         <link href="css/endless-skin.css" rel="stylesheet">
@@ -128,7 +131,6 @@
                     </li>
                 </ul>
             </div><!-- /top-nav-->
-
             <!-- Sidebar -->
             <ng-include src="'components/sidebar/sidebar.html'"></ng-include>
 
@@ -137,7 +139,7 @@
 
             </div><!-- /main-container -->
                             <!-- Footer
-                                                                                                                                                                                                                                                            ================================================== -->
+                                                                                                                                                                                                                                                                                            ================================================== -->
             <footer>
                 <div class="row">
                     <div class="col-sm-6">
@@ -190,17 +192,20 @@
         </div>
 
                     <!-- Le javascript
-                                                                                                                                                                                            ================================================== -->
+                                                                                                                                                                                                                    ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
-        
+        <!-- Jquery -->
+        <script src="js/jquery-1.10.2.min.js"></script>
+
         <!-- Angular -->
         <script src="js/angular.min.js"></script>
         <script src="js/angular-ui-router.min.js"></script>
 
-        <!-- Jquery -->
-        <script src="js/jquery-1.10.2.min.js"></script>
         <!-- Bootstrap -->
         <script src="bootstrap/js/bootstrap.js"></script>
+
+        <!-- Full Calender -->
+        <script src="js/fullcalendar.min.js"></script>
 
         <!-- Flot -->
         <script src="js/jquery.flot.min.js"></script>
@@ -231,7 +236,7 @@
         <script src="js/jquery.cookie.min.js"></script>
 
         <!-- Endless -->
-       <!-- <script src="js/endless/endless_dashboard.js"></script>-->
+        <!-- <script src="js/endless/endless_dashboard.js"></script>-->
         <script src="js/endless/endless.js"></script>
 
         <!-- Mobilesson -->
@@ -242,5 +247,6 @@
         <script src="components/courses/single-course.js"></script>
         <script src="components/employees/employees.js"></script>
         <script src="components/employees/department.js"></script>
+        <script src="components/calendar/calendar.js"></script>
     </body>
 </html>
