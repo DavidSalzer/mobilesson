@@ -21,8 +21,8 @@ mobilessonApp.controller('courses', ['$rootScope', '$scope', '$state', '$http', 
             //data for bar chart.
             barData = [];
             for (var i in $scope.statistics.statisticsByDepartment) {
-                installed = $scope.statistics.statisticsByDepartment[i].installed / $scope.statistics.statisticsByDepartment[i].employees * 100;
-                finished = $scope.statistics.statisticsByDepartment[i].ended / $scope.statistics.statisticsByDepartment[i].employees * 100;
+                installed = Math.round($scope.statistics.statisticsByDepartment[i].installed / $scope.statistics.statisticsByDepartment[i].employees * 100);
+                finished = Math.round($scope.statistics.statisticsByDepartment[i].ended / $scope.statistics.statisticsByDepartment[i].employees * 100);
                 barData.push({ y: $scope.statistics.statisticsByDepartment[i].department.name, a: installed, b: finished })
             }
 
