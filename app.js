@@ -52,4 +52,13 @@ var mobilessonApp = angular.module('mobilessonApp', ['ui.router'])
                 }
             }
         })
+         .state('calendar', {
+             url: "/calendar",
+             views: {
+                 "main": {
+                     templateUrl: "./components/calendar/calendar.html",
+                     controller: "calendar"
+                 }
+             }
+         })
 });
