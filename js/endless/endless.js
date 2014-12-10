@@ -108,7 +108,7 @@ $(function () {
                 $(this).parent().addClass('open').children('.submenu').slideDown();
             }
             else {
-                $(this).parent().removeClass('open').children('.submenu').slideUp();
+                $(this).parent().removeClass('open').children('.submenu').slideDown();
             }
         }
 
