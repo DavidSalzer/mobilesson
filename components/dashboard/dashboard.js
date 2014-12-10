@@ -1,5 +1,6 @@
 mobilessonApp.controller('dashboard', ['$rootScope', '$scope', '$state', '$http', function ($rootScope, $scope, $state, $http) {
 
+    //need to replace in data from server.
     $scope.installedInCompany = 347;
     $scope.employeesInCompany = 568;
     $scope.testDone = 982;

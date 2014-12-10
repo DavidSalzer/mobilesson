@@ -1,4 +1,4 @@
-mobilessonApp.controller('courses', ['$rootScope', '$scope', '$state', '$http', function ($rootScope, $scope, $state, $http) {
+mobilessonApp.controller('courses', ['$rootScope', '$scope', '$state', '$http', '$timeout', function ($rootScope, $scope, $state, $http, $timeout) {
 
 
     $http.get(domain + 'statistics/MobiStatistics.php?action=getStatisticsByUnit&unit=all')
@@ -6,6 +6,12 @@ mobilessonApp.controller('courses', ['$rootScope', '$scope', '$state', '$http', 
         if (data.status == 'ok') {
             $scope.statistics = data.data;
             $scope.notStarted = $scope.statistics.general.employees - $scope.statistics.general.started - $scope.statistics.general.ended;
+
+            //example: timeout for apply value from scope to view.
+            $timeout(function () {
+                $scope.donutTitle = 'Information on all company';
+            }, 0);
+
 
             //data for donat chart.
             donutChart = Morris.Donut({
@@ -29,14 +35,6 @@ mobilessonApp.controller('courses', ['$rootScope', '$scope', '$state', '$http', 
             barChart = Morris.Bar({
                 element: 'barChartCourses',
                 data: barData,
-                //{ y: '2006', a: 150, b: 90 },
-                //{ y: '2007', a: 75, b: 65 },
-                //{ y: '2008', a: 50, b: 40 },
-                //{ y: '2009', a: 75, b: 65 },
-                //{ y: '2010', a: 50, b: 40 },
-                //{ y: '2011', a: 75, b: 65 },
-                //{ y: '2012', a: 100, b: 90 }
-	              //],
                 xkey: 'y',
                 ykeys: ['a', 'b'],
                 grid: false,
