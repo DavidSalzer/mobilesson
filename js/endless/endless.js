@@ -62,19 +62,19 @@ $(function () {
         elements: false
     };
 
-    //
-    $('.login-link').click(function (e) {
-        e.preventDefault();
-        href = $(this).attr('href');
+    //gidi canceled - pass click event to angular controller.
+    //$('.login-link').click(function (e) {
+    //    e.preventDefault();
+    //    href = $(this).attr('href');
 
-        $('.login-wrapper').addClass('fadeOutUp');
+    //    $('.login-wrapper').addClass('fadeOutUp');
 
-        setTimeout(function () {
-            window.location = href;
-        }, 900);
+    //    setTimeout(function () {
+    //        window.location = href;
+    //    }, 900);
 
-        return false;
-    });
+    //    return false;
+    //});
 
     //Logout Confirmation
     $('#logoutConfirm').popup({
