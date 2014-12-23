@@ -21,8 +21,8 @@ $(function () {
         $('#top-nav').addClass($.cookie('skin_color'));
     }
 
-    $('aside').addClass('skin-1');
-    $('#top-nav').addClass('skin-1');
+    $('aside').addClass('skin-6');
+    $('#top-nav').addClass('skin-6');
 
     //shai- crossed out this section to keep permanent theme
     //
