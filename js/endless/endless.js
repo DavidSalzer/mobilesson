@@ -1,5 +1,4 @@
-
-$(function () {
+$(document).ready(function () {
 
     // Cookie validation
     if (jQuery.type($.cookie('skin_color')) != 'undefined') {
@@ -101,14 +100,14 @@ $(function () {
 	)
 
     //Collapsible Sidebar Menu
-    $('.openable > a').click(function () {
+    $("#wrapper").on('click', '.openable > a', function () {
         if (!$('#wrapper').hasClass('sidebar-mini')) {
             if ($(this).parent().children('.submenu').is(':hidden')) {
                 $(this).parent().siblings().removeClass('open').children('.submenu').slideUp();
                 $(this).parent().addClass('open').children('.submenu').slideDown();
             }
             else {
-                $(this).parent().removeClass('open').children('.submenu').slideDown();
+                $(this).parent().removeClass('open').children('.submenu').slideUp();
             }
         }
 

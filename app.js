@@ -34,12 +34,12 @@ var mobilessonApp = angular.module('mobilessonApp', ['ui.router'])
                 }
             }
         })
-        .state('employees', {
-            url: "/employees",
+        .state('departments', {
+            url: "/departments",
             views: {
                 "main": {
-                    templateUrl: "./components/employees/employees.html",
-                    controller: "employees"
+                    templateUrl: "./components/departments/departments.html",
+                    controller: "departments"
                 }
             }
         })
@@ -47,7 +47,7 @@ var mobilessonApp = angular.module('mobilessonApp', ['ui.router'])
             url: "/department/:departmentId",
             views: {
                 "main": {
-                    templateUrl: "./components/employees/department.html",
+                    templateUrl: "./components/departments/department.html",
                     controller: "department"
                 }
             }
