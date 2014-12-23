@@ -63,8 +63,7 @@
                         <span class="menu-hover"></span>
                     </a>
                     <ul class="submenu">
-                        <li><a data-ng-click="navigate('department',{departmentId:1})"><span class="submenu-label">Department 1</span></a></li>
-                        <li><a data-ng-click="navigate('department',{departmentId:2})"><span class="submenu-label">Department 2</span></a></li>
+                        <li data-ng-repeat="department in departments"><a data-ng-click="navigate('department',{departmentId:department.id})"><span class="submenu-label">{{department.name}}</span></a></li>
                     </ul>
                 </li>
                 <li class="">
