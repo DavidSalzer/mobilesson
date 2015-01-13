@@ -5,3 +5,13 @@
 .smaller .title{
     font-size: 14px;
 }*/
+
+aside .sidebar-inner {
+    height: 100%;
+    overflow: auto;
+    
+}
+
+aside .main-menu {
+    cursor: pointer;
+}

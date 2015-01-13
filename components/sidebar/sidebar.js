@@ -24,4 +24,10 @@ mobilessonApp.controller('sidebar', ['$rootScope', '$scope', '$state', '$statePa
         console.log(data);
     })
 
+    $scope.$on('setUser', function (event, args) {
+        $timeout(function () {
+            $scope.user = args.user;
+        }, 0);
+    });
+
 } ])
