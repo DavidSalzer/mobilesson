@@ -1,7 +1,7 @@
 mobilessonApp.controller('courses', ['$rootScope', '$scope', '$state', '$http', '$timeout', function ($rootScope, $scope, $state, $http, $timeout) {
 
 
-    $http.get(domain + 'mobiEngine3.4_DEV/statisticsServer.php?action=getStatisticsByUnit&unit=all')
+    $http.get(domain + '?action=getStatisticsByUnit&unit=all')
     .success(function (data) {
         if (data.status == 'ok') {
             $scope.statistics = data.data;
