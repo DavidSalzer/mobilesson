@@ -6,7 +6,7 @@ mobilessonApp.controller('dashboard', ['$rootScope', '$scope', '$state', '$http'
     $scope.testDone = 982;
     $scope.courses = 78;
 
-    $http.get(domain + 'mobiEngine3.4_DEV/statisticsServer.php?action=getStatisticsByUnit&unit=all')
+    $http.get(domain + '?action=getStatisticsByUnit&unit=all')
     .success(function (data) {
         if (data.status == 'ok') {
             $scope.statistics = data.data;

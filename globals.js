@@ -1,1 +1,1 @@
-var domain = 'http://23.23.180.246/';
+var domain = 'http://23.23.180.246/mobiEngine/v2.0_DEV/statisticsServer.php';

@@ -2,7 +2,7 @@ mobilessonApp.controller('department', ['$rootScope', '$scope', '$state', '$stat
     $('#scroll-to-top').click();
 
     //$scope.departmentId = $stateParams.departmentId;
-    $http.get(domain + 'mobiEngine3.4_DEV/statisticsServer.php?action=getStatisticsByUnit&unit=department&id=' + $stateParams.departmentId)
+    $http.get(domain + '?action=getStatisticsByUnit&unit=department&id=' + $stateParams.departmentId)
     .success(function (data) {
         if (data.status == 'ok') {
             $scope.statistics = data.data;
@@ -19,7 +19,7 @@ mobilessonApp.controller('department', ['$rootScope', '$scope', '$state', '$stat
     })
 
     $scope.getEmployeesByCourse = function () {
-        $http.get(domain + 'mobiEngine3.4_DEV/statisticsServer.php?action=getStatisticsByUnit&unit=department&id=' + $stateParams.departmentId)
+        $http.get(domain + '?action=getStatisticsByUnit&unit=department&id=' + $stateParams.departmentId)
     .success(function (data) {
         if (data.status == 'ok') {
             $scope.statistics = data.data;

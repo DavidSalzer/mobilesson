@@ -14,7 +14,7 @@ var loginApp = angular.module('loginApp', [])
             return;
         }
         
-        queryString = 'MobiStatistics.php?action=login';
+        queryString = '?action=login';
         request = {
             userName: $scope.userName,
             password: $scope.password
