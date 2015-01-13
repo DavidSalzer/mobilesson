@@ -11,7 +11,7 @@ mobilessonApp.controller('sidebar', ['$rootScope', '$scope', '$state', '$statePa
         // if page=currentpage
     }
 
-    $http.get(domain + 'mobiEngine3.4_DEV/statisticsServer.php?action=getDepartments')//&offset=&limit=&status
+    $http.get(domain + 'mobiEngine/v1.0/statisticsServer.php?action=getDepartments')//&offset=&limit=&status
     .success(function (data) {
         if (data.status == 'ok') {
             $timeout(function () {

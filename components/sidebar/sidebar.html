@@ -12,13 +12,15 @@
             </a>
         </div><!-- /size-toggle -->
         <div class="user-block clearfix">
-            <img src="img/user.jpg" alt="User Avatar">
+            <img src="img/user2.jpg" alt="User Avatar">
             <div class="detail">
-                <strong>John Doe</strong><span class="badge badge-danger m-left-xs bounceIn animation-delay4">4</span>
-                <ul class="list-inline">
+                <strong>Orit Halamish</strong>
+                <!--<span class="badge badge-danger m-left-xs bounceIn animation-delay4">4</span>-->
+                <!--<ul class="list-inline">
+
                     <li><a href="profile.html">Profile</a></li>
                     <li><a href="inbox.html" class="no-margin">Inbox</a></li>
-                </ul>
+                </ul> -->
             </div>
         </div><!-- /user-block -->
         <!--sidebar menu-->
@@ -35,7 +37,7 @@
                         <span class="menu-hover"></span>
                     </a>
                 </li>
-                <li data-ng-click="navigate('courses')">
+                <!--<li data-ng-click="navigate('courses')">
                     <a href="#courses">
                         <span class="menu-icon">
                             <i class="fa fa-book fa-lg"></i>
@@ -50,9 +52,11 @@
                         <li><a href="#courses/2"><span class="submenu-label">Course 2</span></a></li>
 
                     </ul>
-                </li>
+                </li>-->
+
+                <!-- Depatments -->
                 <li class="openable">
-                    <a data-ng-click="navigate('courses')">
+                    <a> <!--data-ng-click="navigate('courses')">-->
                         <span class="menu-icon">
                             <i class="fa fa-group fa-lg"></i>
                         </span>
@@ -66,6 +70,8 @@
                         <li data-ng-repeat="department in departments"><a data-ng-click="navigate('department',{departmentId:department.id})"><span class="submenu-label">{{department.name}}</span></a></li>
                     </ul>
                 </li>
+
+                <!--
                 <li class="">
                     <a href="#calendar">
                         <span class="menu-icon">
@@ -77,6 +83,7 @@
                         <span class="menu-hover"></span>
                     </a>
                 </li>
+                -->
             </ul>
         </div><!-- /main-menu -->
     </div><!-- /sidebar-inner -->
